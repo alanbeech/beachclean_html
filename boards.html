@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>#2minutebeachclean | Home</title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<body>
+
+    <header>
+
+        <div class="content">
+
+            <a href="home.html"><img alt="#2minutebeachclean logo" class="logo" src="images/logo.png"></a>
+            <nav class="main">
+                <ul class="menu" style="border: 0px solid green">
+                    <li><a class="horiz" href="home.html">Home</a></li>
+                    <li>
+                        <a class="horiz" href="why.html">Why?</a>
+                        <ul style="margin-left: -37px;">
+                            <li class="spacer">&nbsp;</li>
+                            <li class="selected-arrow">&#9650;</li>
+                            <li class="vert-header">Why?</li>
+                            <li><a href="safety.html">Safety</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="horiz" href="about.html">About</a>
+                        <ul style="margin-left: -30px;">
+                            <li class="spacer">&nbsp;</li>
+                            <li class="selected-arrow">&#9650;</li>
+                            <li class="vert-header">About</li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="media.html">Media</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="horiz selected" href="boards.html">Boards</a>
+                        <ul style="margin-left: -30px;">
+                            <li class="spacer">&nbsp;</li>
+                            <li class="selected-arrow">&#9650;</li>
+                            <li class="vert-header">Boards</li>
+                            <li><a href="boardsmap.html">Map</a></li>
+                            <li><a href="boardsinfo.html">Info</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="horiz" href="blog.html">Blog</a></li>
+                    <li><a class="horiz" href="global.html">Global</a></li>
+                    <li><a class="horiz" href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <button class="btn btn-default">MENU</button>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <div class="body-container">
+
+        <main class="boards">
+
+            <section class="header">
+
+                <div class="text-area">
+                    <img src="images/home-title.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. vamus semper eros libero, eu vulputate metus blandit.</p>
+                    <a href="#">
+                        <button>Find out more</button>
+                    </a>
+
+                </div>
+
+            </section>
+
+            <section class="intro">
+
+                <h1>The Beach Clean Stations</h1>
+
+                <p>The idea of the beach clean station was conceived in Bude in 2014 by Kim Stevens and Deb Rosser as a way of making it easier for everyone
+                    <br>to do their bit. The stations are A-boards with a holder for litter pickers and a windproof slot for used plastic bags.
+                    <br> They are self supporting and come in our brand colours – or your brand colours. </p>
+
+                <p>They are all made to order by our supplier in Barnstaple.</p>
+
+                <!--<a href="#">-->
+                    <button id="show-boards-button">Show me the board locations</button>
+                <!--</a>-->
+
+            </section>
+
+            <section id="map" class="map">
+                <div id="map_canvas"></div>
+            </section>
+
+            <section class="qa">
+
+                <div class="selector-area">
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can I have a beach clean station at my beach?</h1>
+                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
+                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can I have a beach clean station at my beach?</h1>
+                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
+                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can I have a beach clean station at my beach?</h1>
+                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
+                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can I have a beach clean station at my beach?</h1>
+                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
+                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script>
+
+        var BoardsVM = ( function( window ) {
+
+            var map;
+            var bounds = new google.maps.LatLngBounds();
+            var loc;
+
+            function activate(){
+                handleItemClicked();
+                //initialiseMap();
+                handleShowMapClicked();
+            }
+
+
+
+            // map
+            function initialiseMap() {
+
+                var mapOptions = { mapTypeId: google.maps.MapTypeId.ROADMAP };
+                map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+                jQuery.support.cors = true;
+                $.ajax({
+                    url: 'http://beachclean-dev.azurewebsites.net/api/boards',
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        data.forEach(function (beach) {
+
+                            loc = new google.maps.LatLng(beach.latitude, beach.longitude, beach);
+                            bounds.extend(loc);
+                            addMarker(loc, beach.beachName, "active", beach);
+                        });
+                        map.fitBounds(bounds);
+                        map.panToBounds(bounds);
+                    }
+                });
+                map.fitBounds(bounds);
+                map.panToBounds(bounds);
+            }
+
+            function handleShowMapClicked() {
+                $('#show-boards-button').click(function () {
+                    $('#map').fadeToggle('fast', function () {
+                        if ($(this).is(":visible"))
+                            initialiseMap();
+                    });
+                });
+            }
+
+            var infowindow = new google.maps.InfoWindow({
+                content: name,
+                closeBoxURL: "/images/logo.png"
+            });
+
+            function addMarker(location, name, active, board) {
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: name,
+                    status: active
+                });
+
+                marker.addListener('click', function () {
+
+                    var infoBoxContent = '';
+                    infoBoxContent += '<div class="info-box">';
+
+                    infoBoxContent += '<div style="font-weight:300; font-size: 150%;">' + name + '</div>';
+
+                    if (board.beachPartner != null) {
+                        infoBoxContent += '<p><strong>Guardian: </strong>' + board.beachPartner + '</p>';
+                    }
+
+                    if (board.website != null) {
+                        infoBoxContent += '<p><strong>Website: </strong> <a href="' + board.website + '" target=_blank>' + board.website + '</a></p>';
+                    }
+
+                    if (board.website == null && board.contact != null) {
+                        infoBoxContent += '<p><strong>Contact: ' + board.contact + '</p>';
+                    }
+                    infoBoxContent += '</div>';
+                    infowindow.setContent(infoBoxContent);
+                    infowindow.open(map, marker);
+                });
+            }
+
+
+            // faq
+
+            function handleItemClicked() {
+                $('.item').click(function () {
+                    // swap plus/minus image
+                    var tempOtherImage = $(this).find('img').attr('src');
+                    $(this).find('img').attr('src', $(this).find('img').attr('data-alt-img'));
+                    $(this).find('img').attr('data-alt-img', tempOtherImage);
+                    // toggle content show
+                    $(this).find('p').fadeToggle('slow');
+                });
+            }
+
+            function myOtherMethod() {
+                alert( 'my other method' );
+            }
+
+
+            $(function () {
+                activate();
+            });
+
+
+            // explicitly return public methods when this object is instantiated
+            return {
+                //someMethod : myMethod,
+                someOtherMethod : myOtherMethod
+            };
+
+        } )( window );
+
+
+        var FooterVM = ( function( window ) {
+
+            function activate(){
+
+                $( "#signup" ).submit(function( event ) {
+                    alert( "Handler for .submit() called." );
+                    event.preventDefault();
+                });
+            }
+
+            $(function () {
+                activate();
+            });
+
+        } )( window );
+
+    </script>
+
+    <footer>
+
+        <section class="join">
+            <div class="join-the-movement">JOIN THE MOVEMENT, IT'S FREE.</div>
+            <div class="why">For early bird offers and news, subscribe and join out tribe.</div>
+
+            <form id="signup" class="signup">
+                <input id="name" type="text" placeholder="Your Name">
+                <input id="email" type="email" placeholder="Your Email">
+                <button type="submit" >SUBSCRIBE</button>
+            </form>
+        </section>
+
+        <section class="sponsors-and-social">
+
+            <div class="supported-by">
+                Supported by
+            </div>
+            <div>
+                <img class="surfdome-logo" src="images/surfdome-logo.png" alt="">
+            </div>
+            <div>
+                <img class="reef-logo" src="images/reef-logo.png">
+            </div>
+
+            <div class="follow-us">Follow us</div>
+
+            <div class="social-buttons">
+                <a class="instagram-button" href="#" ></a>
+                <a class="facebook-button" href="#" ></a>
+                <a class="twitter-button" href="#" ></a>
+            </div>
+
+            <div class="links">
+                <a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="boards.html">Boards</a> | <a href="blog.html">Blog</a> | <a
+                    href="global.html">Global</a> | <a href="contact.html">Contact</a> | <a href="shop.html">Shop</a>
+            </div>
+
+            <div class="copyright">&copy; 2 Minute Beach Clean 2016</div>
+
+        </section>
+
+    </footer>
+
+</body>
+</html>

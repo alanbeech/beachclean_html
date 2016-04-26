@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>#2minutebeachclean | Home</title>
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+<header>
+
+    <div class="content">
+
+        <a href="home.html"><img alt="#2minutebeachclean logo" class="logo" src="images/logo.png"></a>
+        <nav class="main">
+            <ul class="menu" style="border: 0px solid green">
+                <li><a class="horiz" href="home.html">Home</a></li>
+                <li>
+                    <a class="horiz selected" href="why.html">Why?</a>
+                    <ul style="margin-left: -37px;">
+                        <li class="spacer">&nbsp;</li>
+                        <li class="selected-arrow">&#9650;</li>
+                        <li class="vert-header">Why?</li>
+                        <li><a href="safety.html">Safety</a></li>
+                    </ul>
+                </li>
+                <li><a class="horiz" href="about.html">About</a>
+                    <ul style="margin-left: -30px;">
+                        <li class="spacer">&nbsp;</li>
+                        <li class="selected-arrow">&#9650;</li>
+                        <li class="vert-header">About</li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="media.html">Media</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="horiz" href="boards.html">Boards</a>
+                    <ul style="margin-left: -30px;">
+                        <li class="spacer">&nbsp;</li>
+                        <li class="selected-arrow">&#9650;</li>
+                        <li class="vert-header">Boards</li>
+                        <li><a href="boardsmap.html">Map</a></li>
+                        <li><a href="boardsinfo.html">Info</a></li>
+                    </ul>
+                </li>
+                <li><a class="horiz" href="blog.html">Blog</a></li>
+                <li><a class="horiz" href="global.html">Global</a></li>
+                <li><a class="horiz" href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+<div class="body-container">
+
+    why
+
+</div>
+
+<footer>
+
+    <section class="join">
+        <div class="join-the-movement">JOIN THE MOVEMENT, IT'S FREE.</div>
+        <div class="why">For early bird offers and news, subscribe and join out tribe.</div>
+
+        <form [ngFormModel]="userForm" (submit)="onClickMe()" class="signup">
+            <input ngControl="name" id="name" type="text" placeholder="Your Name" required>
+            <input ngControl="email" id="email" type="email" placeholder="Your Email">
+            <button type="submit" [disabled]="!userForm.valid">SUBSCRIBE</button>
+        </form>
+    </section>
+
+    <section class="sponsors-and-social">
+
+        <div class="supported-by">
+            Supported by
+        </div>
+        <div>
+            <img class="surfdome-logo" src="images/surfdome-logo.png" alt="">
+        </div>
+        <div>
+            <img class="reef-logo" src="images/reef-logo.png">
+        </div>
+
+        <div class="follow-us">Follow us</div>
+
+        <div class="social-buttons">
+            <a class="instagram-button" href="#" ></a>
+            <a class="facebook-button" href="#" ></a>
+            <a class="twitter-button" href="#" ></a>
+        </div>
+
+        <div class="links">
+            <a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="boards.html">Boards</a> | <a href="blog.html">Blog</a> | <a
+                href="global.html">Global</a> | <a href="contact.html">Contact</a> | <a href="shop.html">Shop</a>
+        </div>
+
+        <div class="copyright">&copy; 2 Minute Beach Clean 2016</div>
+
+    </section>
+
+</footer>
+
+</body>
+</html>

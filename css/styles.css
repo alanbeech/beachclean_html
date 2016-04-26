@@ -1,0 +1,762 @@
+@media screen and (max-width: 770px) {
+  nav.main {
+    display: none; }
+
+  /* hide it elsewhere */ }
+@media screen and (min-width: 770px) {
+  nav.mobile {
+    display: none; }
+
+  /* hide it elsewhere */ }
+body {
+  background-color: #bbb;
+  margin: 0;
+  font-size: 12px;
+  color: #0b3543;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif; }
+  body header {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 130px; }
+    body header .content {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto; }
+      body header .content a img.logo {
+        width: 204px;
+        margin: 26px 0 23px 23px;
+        float: left; }
+      body header .content nav.mobile {
+        margin-top: 70px;
+        margin-right: 23px;
+        float: right; }
+      body header .content nav.main {
+        float: right;
+        margin-right: 10px; }
+        body header .content nav.main .menu {
+          font-size: 15px;
+          font-weight: 600;
+          margin-top: 78px;
+          list-style-type: none; }
+          body header .content nav.main .menu li {
+            float: left;
+            height: 32px; }
+            body header .content nav.main .menu li a {
+              margin: .2em 1em;
+              display: block;
+              color: #333;
+              text-decoration: none; }
+            body header .content nav.main .menu li a.horiz {
+              border-bottom: 3px solid #fff; }
+            body header .content nav.main .menu li a.horiz:hover {
+              border-color: #cccccc; }
+            body header .content nav.main .menu li a.selected {
+              color: #ea8c0c; }
+            body header .content nav.main .menu li a.selected:hover {
+              border-color: #facf95; }
+            body header .content nav.main .menu li ul {
+              position: absolute;
+              left: -9999px;
+              top: -9999px;
+              list-style-type: none; }
+          body header .content nav.main .menu li.spacer {
+            background-color: #fff;
+            height: 14px;
+            width: 100%; }
+          body header .content nav.main .menu li.selected-arrow {
+            color: #ea8c0c;
+            background-color: #fff;
+            padding: 0;
+            margin: 0;
+            height: 12px;
+            width: 100%;
+            margin-top: 15px; }
+          body header .content nav.main .menu li:hover {
+            position: relative; }
+            body header .content nav.main .menu li:hover ul {
+              color: #fff;
+              z-index: 999;
+              left: 0;
+              top: 26px;
+              background: #ea8c0c;
+              padding: 0;
+              text-align: center; }
+              body header .content nav.main .menu li:hover ul li.vert-header {
+                font-weight: 600;
+                height: 40px;
+                background-color: #ea8c0c;
+                border-bottom: 2px solid #f5a334;
+                padding: 8px 0;
+                width: 100%; }
+              body header .content nav.main .menu li:hover ul li.selected-arrow {
+                height: 12px; }
+              body header .content nav.main .menu li:hover ul li.spacer {
+                height: 14px; }
+              body header .content nav.main .menu li:hover ul li {
+                padding: 0;
+                margin: 0;
+                height: 37px; }
+                body header .content nav.main .menu li:hover ul li a {
+                  font-weight: 300;
+                  margin: 0;
+                  color: #fff;
+                  display: block;
+                  margin: 0;
+                  width: 140px;
+                  padding: 8px 0; }
+                body header .content nav.main .menu li:hover ul li a:hover {
+                  background: #b96f0a; }
+  body .body-container {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto; }
+    body .body-container main.home section.info-bar {
+      background-image: url("../images/info-bar-back.png");
+      border-top: 3px solid #598ea1;
+      height: 102px;
+      padding-left: 165px;
+      padding-right: 165px;
+      width: 100%; }
+      body .body-container main.home section.info-bar .message {
+        position: absolute;
+        font-weight: 300;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        border: 0px solid red;
+        font-size: 20px;
+        color: white;
+        margin-top: 35px; }
+        body .body-container main.home section.info-bar .message a {
+          color: white;
+          text-decoration: underline; }
+        body .body-container main.home section.info-bar .message a:hover {
+          color: #ea8c0c; }
+      body .body-container main.home section.info-bar img {
+        margin-top: 5px;
+        height: 94px;
+        width: 131px; }
+    body .body-container main.home .header {
+      height: 621px;
+      background-image: url("../images/home-header.jpg");
+      background-position: center; }
+      body .body-container main.home .header .text-area {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40%;
+        text-align: center; }
+        body .body-container main.home .header .text-area img {
+          margin-top: 86px;
+          width: 427px;
+          height: 165px; }
+        body .body-container main.home .header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+        body .body-container main.home .header .text-area button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 184px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.home .header .text-area button:hover {
+          background-color: #0c3442; }
+    body .body-container main.home .welcome {
+      text-align: center;
+      padding-bottom: 70px; }
+      body .body-container main.home .welcome h1 {
+        font-size: 30px;
+        font-weight: 300;
+        margin-top: 66px; }
+      body .body-container main.home .welcome p {
+        font-size: 16px;
+        margin: 30px 56px; }
+      body .body-container main.home .welcome button {
+        background-color: #6e9eaf;
+        color: white;
+        font-size: 16px;
+        border-width: 0;
+        font-family: inherit;
+        height: 68px;
+        width: 220px;
+        margin-top: 52px; }
+      body .body-container main.home .welcome button:hover {
+        background-color: #0c3442; }
+    body .body-container main.home section.world-map {
+      height: 834px;
+      background-image: url("../images/home-map.jpg");
+      background-position: center;
+      padding-top: 107px;
+      text-align: center;
+      color: #fff; }
+      body .body-container main.home section.world-map div.info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 830px;
+        height: 547px;
+        background-image: url("../images/home-map-info.png");
+        padding-top: 130px; }
+        body .body-container main.home section.world-map div.info h1 {
+          font-weight: 300;
+          font-size: 30px; }
+        body .body-container main.home section.world-map div.info p {
+          margin-top: 24px;
+          font-weight: 300;
+          font-size: 16px; }
+        body .body-container main.home section.world-map div.info button {
+          background-color: #0c3442;
+          color: white;
+          font-size: 16px;
+          border-width: 0;
+          font-family: inherit;
+          height: 68px;
+          width: 220px;
+          margin-top: 52px; }
+    body .body-container main.home section.boards {
+      height: 437px;
+      background-color: #0c3442;
+      color: #fff;
+      text-align: center;
+      background-image: url("../images/uk-map.png");
+      background-position: center; }
+      body .body-container main.home section.boards .text-area {
+        float: right;
+        width: 50%;
+        padding: 20px; }
+        body .body-container main.home section.boards .text-area .where-heading {
+          font-size: 30px;
+          font-weight: 300;
+          margin-top: 60px; }
+        body .body-container main.home section.boards .text-area p {
+          font-size: 16px;
+          font-weight: 300;
+          margin-top: 25px; }
+        body .body-container main.home section.boards .text-area button {
+          height: 70px;
+          width: 304px;
+          background-color: #0c3442;
+          border: 1px solid #fff;
+          margin-top: 40px;
+          font-weight: 600;
+          font-family: inherit;
+          font-size: 16px; }
+        body .body-container main.home section.boards .text-area button:hover {
+          background-color: #6e9eaf; }
+    body .body-container main.home section.video {
+      height: 909px;
+      background-image: url("../images/home-video-cover.jpg");
+      background-position: center;
+      text-align: center; }
+      body .body-container main.home section.video .text-area {
+        color: #fff; }
+        body .body-container main.home section.video .text-area h1 {
+          margin: 0; }
+          body .body-container main.home section.video .text-area h1 img {
+            width: 524px;
+            margin-top: 340px; }
+        body .body-container main.home section.video .text-area h2 {
+          font-weight: 400;
+          font-size: 24px;
+          margin-top: 36px; }
+        body .body-container main.home section.video .text-area p {
+          font-weight: 300;
+          font-size: 24px; }
+        body .body-container main.home section.video .text-area img {
+          width: 177px;
+          margin-top: 46px; }
+        body .body-container main.home section.video .text-area a.play {
+          border: 0px solid red;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 34px;
+          display: block;
+          height: 64px;
+          width: 64px;
+          background-image: url("../images/home-play-button0.png");
+          width: 64px;
+          height: 64px;
+          background-size: 64px 64px; }
+        body .body-container main.home section.video .text-area a.play:hover {
+          background-image: url("../images/home-play-button1.png"); }
+    body .body-container main.home section.shop {
+      height: 570px;
+      background-color: #f4f1ed;
+      background-image: url("../images/shop-section-back.png");
+      background-position: center; }
+      body .body-container main.home section.shop .left {
+        float: left;
+        width: 50%; }
+        body .body-container main.home section.shop .left img.shop-elements {
+          margin: 40px;
+          width: 689px;
+          height: 461px; }
+      body .body-container main.home section.shop .right {
+        float: right;
+        width: 50%;
+        text-align: center; }
+        body .body-container main.home section.shop .right .check-out {
+          margin-top: 107px;
+          width: 309px;
+          height: 149px; }
+        body .body-container main.home section.shop .right p {
+          font-size: 16px;
+          margin-top: 24px; }
+        body .body-container main.home section.shop .right button {
+          font-family: inherit;
+          font-size: 16px;
+          font-weight: 600;
+          border: 2px solid #73a1b2;
+          color: #73a1b2;
+          height: 68px;
+          background-color: transparent;
+          width: 302px;
+          margin-top: 44px; }
+        body .body-container main.home section.shop .right button:hover {
+          background-color: #0c3442;
+          color: white;
+          border-color: #0c3442; }
+    body .body-container main.home section.instagram {
+      height: 800px;
+      background-image: url("../images/home-instagram-background.png");
+      background-position: center;
+      text-align: center;
+      padding-top: 90px; }
+      body .body-container main.home section.instagram h1 {
+        margin: 0; }
+      body .body-container main.home section.instagram img.title {
+        width: 361px; }
+      body .body-container main.home section.instagram .pics {
+        width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px; }
+        body .body-container main.home section.instagram .pics img.pic {
+          margin: 5px;
+          width: 269px;
+          width: 269px;
+          float: left;
+          margin-bottom: 70px; }
+        body .body-container main.home section.instagram .pics p {
+          font-size: 16px;
+          font-weight: 300; }
+      body .body-container main.home section.instagram button {
+        font-family: inherit;
+        font-size: 16px;
+        background-color: #6e9eaf;
+        border-width: 0;
+        height: 66px;
+        width: 463px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 34px; }
+      body .body-container main.home section.instagram button:hover {
+        background-color: #0c3442; }
+    body .body-container main.about section.header {
+      height: 620px;
+      background-image: url("../images/about-header.jpg");
+      background-position: center; }
+    body .body-container main.about section.intro {
+      height: 512px;
+      background-image: url("../images/about-intro-background.png");
+      background-position: center;
+      text-align: center; }
+      body .body-container main.about section.intro .text-container {
+        width: 1106px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.about section.intro .text-container h1 {
+          font-size: 30px;
+          font-weight: 300;
+          margin: 0;
+          padding-top: 104px; }
+        body .body-container main.about section.intro .text-container p {
+          margin-top: 20px;
+          margin-bottom: 20px; }
+    body .body-container main.about .social a {
+      display: block;
+      float: left;
+      width: 26px;
+      height: 26px;
+      margin: 3px 6px 3px 0;
+      background-size: 26px 26px; }
+    body .body-container main.about .social a.facebook {
+      background-image: url("../images/about-facebook0.jpg"); }
+    body .body-container main.about .social a.facebook:hover {
+      background-image: url("../images/about-facebook1.jpg"); }
+    body .body-container main.about .social a.twitter {
+      background-image: url("../images/about-twitter0.jpg"); }
+    body .body-container main.about .social a.twitter:hover {
+      background-image: url("../images/about-twitter1.jpg"); }
+    body .body-container main.about .social a.linkedin {
+      background-image: url("../images/about-linkedin0.jpg"); }
+    body .body-container main.about .social a.linkedin:hover {
+      background-image: url("../images/about-linkedin1.jpg"); }
+    body .body-container main.about .social a.googleplus {
+      background-image: url("../images/about-googleplus0.jpg"); }
+    body .body-container main.about .social a.googleplus:hover {
+      background-image: url("../images/about-googleplus1.jpg"); }
+    body .body-container main.about .social a.web {
+      background-image: url("../images/about-web0.jpg"); }
+    body .body-container main.about .social a.web:hover {
+      background-image: url("../images/about-web1.jpg"); }
+    body .body-container main.about section.left-pic-first {
+      height: 668px;
+      background-color: #fafafa; }
+      body .body-container main.about section.left-pic-first .person-container {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.about section.left-pic-first .person-container .photo {
+          margin-top: 106px;
+          float: left; }
+        body .body-container main.about section.left-pic-first .person-container .person-info {
+          float: right;
+          width: 558px;
+          margin-top: 110px; }
+          body .body-container main.about section.left-pic-first .person-container .person-info h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 400; }
+          body .body-container main.about section.left-pic-first .person-container .person-info h2 {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 300; }
+          body .body-container main.about section.left-pic-first .person-container .person-info p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 15px; }
+    body .body-container main.about section.left-pic {
+      height: 690px;
+      background-color: #fafafa; }
+      body .body-container main.about section.left-pic .person-container {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.about section.left-pic .person-container .photo {
+          margin-top: 128px;
+          float: left;
+          border: 1px solid red; }
+        body .body-container main.about section.left-pic .person-container .person-info {
+          border: 1px solid red;
+          float: right;
+          width: 558px; }
+          body .body-container main.about section.left-pic .person-container .person-info h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 400; }
+          body .body-container main.about section.left-pic .person-container .person-info h2 {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 300; }
+          body .body-container main.about section.left-pic .person-container .person-info p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 15px; }
+    body .body-container main.about section.right-pic {
+      height: 668px;
+      background-color: #fff; }
+      body .body-container main.about section.right-pic .person-container {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.about section.right-pic .person-container .photo {
+          margin-top: 106px;
+          float: right; }
+        body .body-container main.about section.right-pic .person-container .person-info {
+          float: left;
+          width: 558px;
+          margin-top: 110px; }
+          body .body-container main.about section.right-pic .person-container .person-info h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 400; }
+          body .body-container main.about section.right-pic .person-container .person-info h2 {
+            margin: 0;
+            margin-top: 10px;
+            font-size: 30px;
+            font-weight: 300; }
+          body .body-container main.about section.right-pic .person-container .person-info p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 15px; }
+    body .body-container main.videos section.header {
+      height: 616px;
+      background-image: url("../images/videos-header.jpg");
+      background-position: center;
+      border-top: 1px solid #ddd; }
+    body .body-container main.videos section.featured-video {
+      background-color: #fafafa;
+      height: 556px; }
+      body .body-container main.videos section.featured-video .content {
+        width: 1220px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.videos section.featured-video .content .cover {
+          margin-top: 98px;
+          float: left; }
+        body .body-container main.videos section.featured-video .content .info {
+          float: right;
+          margin-top: 98px;
+          width: 500px; }
+          body .body-container main.videos section.featured-video .content .info h1 {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 400; }
+          body .body-container main.videos section.featured-video .content .info p {
+            font-size: 16px; }
+    body .body-container main.videos .videos {
+      height: 915px;
+      margin-top: 50px;
+      padding-bottom: 100px; }
+      body .body-container main.videos .videos .content {
+        max-width: 1240px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.videos .videos .content .video {
+          width: 289px;
+          height: 295px;
+          margin: 10px;
+          float: left;
+          border: 0px solid red; }
+          body .body-container main.videos .videos .content .video .date {
+            font-weight: 600;
+            font-size: 12px;
+            color: #b0afaf;
+            margin-top: 20px; }
+          body .body-container main.videos .videos .content .video .title {
+            font-size: 16px;
+            color: #2f4a55;
+            font-weight: 300;
+            margin-top: 10px; }
+      body .body-container main.videos .videos .pager a {
+        width: 25px;
+        height: 25px;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        background-color: #d1d1d1;
+        float: left;
+        margin-right: 3px;
+        padding-top: 4px; }
+      body .body-container main.videos .videos .pager a:hover {
+        background-color: #2f4a55; }
+      body .body-container main.videos .videos .pager a.selected {
+        background-color: #2f4a55; }
+    body .body-container main.boards section.header {
+      height: 620px;
+      background-image: url("../images/boards-header.jpg");
+      background-position: center; }
+      body .body-container main.boards section.header .text-area {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 40%;
+        text-align: center; }
+        body .body-container main.boards section.header .text-area img {
+          margin-top: 86px;
+          width: 427px;
+          height: 165px; }
+        body .body-container main.boards section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+        body .body-container main.boards section.header .text-area button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 184px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.boards section.header .text-area button:hover {
+          background-color: #0c3442; }
+    body .body-container main.boards section.intro {
+      height: 370px;
+      text-align: center; }
+      body .body-container main.boards section.intro h1 {
+        margin: 0;
+        margin-top: 96px;
+        font-weight: 300;
+        font-size: 30px; }
+      body .body-container main.boards section.intro p {
+        margin-top: 15px; }
+      body .body-container main.boards section.intro button {
+        font-family: inherit;
+        font-size: 16px;
+        background-color: #6e9eaf;
+        border-width: 0;
+        height: 66px;
+        width: 292px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 40px; }
+      body .body-container main.boards section.intro button:hover {
+        background-color: #0c3442; }
+    body .body-container main.boards section.map {
+      display: none; }
+      body .body-container main.boards section.map #map_canvas {
+        height: 1102px;
+        width: 100%; }
+    body .body-container main.boards section.qa {
+      padding-bottom: 90px; }
+      body .body-container main.boards section.qa .selector-area {
+        max-width: 1098px;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .body-container main.boards section.qa .selector-area .item {
+          margin-top: 0;
+          margin-left: 5px;
+          margin-right: 5px;
+          margin-bottom: 5px;
+          padding-bottom: 35px;
+          padding-right: 40px;
+          background-color: #f5f2ed;
+          min-height: 110px; }
+          body .body-container main.boards section.qa .selector-area .item img {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin-left: 42px;
+            margin-top: 42px;
+            cursor: hand; }
+          body .body-container main.boards section.qa .selector-area .item h1 {
+            margin: 0;
+            margin-left: 106px;
+            font-size: 24px;
+            font-weight: 400;
+            padding-top: 45px; }
+          body .body-container main.boards section.qa .selector-area .item p {
+            margin-left: 106px;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            font-size: 16px;
+            font-weight: 300;
+            display: none; }
+  body footer {
+    background-color: white;
+    max-width: 1600px;
+    margin: 0 auto; }
+    body footer section.join {
+      font-weight: 300;
+      padding-bottom: 60px;
+      background-image: url("../images/join-us-background.png");
+      background-position: center;
+      text-align: center;
+      color: white; }
+      body footer section.join .join-the-movement {
+        font-size: 36px;
+        padding-top: 52px;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif; }
+      body footer section.join .why {
+        margin-top: 10px;
+        font-size: 20px; }
+      body footer section.join form.signup {
+        margin-top: 35px; }
+        body footer section.join form.signup input {
+          background-color: #5d5d5d;
+          border: 0;
+          font-family: inherit;
+          padding: 12px;
+          padding-left: 30px;
+          margin: 3px;
+          font-size: 18px;
+          height: 66px;
+          width: 370px; }
+        body footer section.join form.signup button {
+          background-color: #ea8c0c;
+          color: white;
+          font-family: inherit;
+          padding: 10px 25px;
+          border-width: 0;
+          margin: 3px;
+          font-size: 20px;
+          height: 66px;
+          width: 188px; }
+        body footer section.join form.signup button:hover {
+          background-color: #0c3442; }
+    body footer section.sponsors-and-social {
+      text-align: center;
+      background-image: url("../images/footer-background.png");
+      background-position: center;
+      height: 696px;
+      color: #fff; }
+      body footer section.sponsors-and-social .supported-by {
+        padding-top: 25px;
+        padding-bottom: 30px;
+        font-size: 22px;
+        font-weight: 300; }
+      body footer section.sponsors-and-social .surfdome-logo {
+        width: 232px;
+        padding-bottom: 45px; }
+      body footer section.sponsors-and-social .reef-logo {
+        width: 80px; }
+      body footer section.sponsors-and-social .follow-us {
+        font-weight: 300;
+        font-size: 22px;
+        margin-top: 110px; }
+      body footer section.sponsors-and-social .copyright {
+        color: #cccccc; }
+      body footer section.sponsors-and-social .social-buttons {
+        border: 0px solid red;
+        width: 345px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 130px;
+        overflow: hidden;
+        margin-top: 5px; }
+        body footer section.sponsors-and-social .social-buttons .instagram-button {
+          background-image: url("../images/instagram0.png");
+          display: block;
+          width: 95px;
+          height: 95px;
+          background-size: 95px 95px;
+          float: left;
+          margin: 10px; }
+        body footer section.sponsors-and-social .social-buttons .instagram-button:hover {
+          background-image: url("../images/instagram1.png"); }
+        body footer section.sponsors-and-social .social-buttons .facebook-button {
+          background-image: url("../images/facebook0.png");
+          display: block;
+          width: 95px;
+          height: 95px;
+          background-size: 95px 95px;
+          margin: 10px;
+          float: left; }
+        body footer section.sponsors-and-social .social-buttons .facebook-button:hover {
+          background-image: url("../images/facebook1.png"); }
+        body footer section.sponsors-and-social .social-buttons .twitter-button {
+          background-image: url("../images/twitter0.png");
+          display: block;
+          width: 95px;
+          height: 95px;
+          background-size: 95px 95px;
+          float: left;
+          margin: 10px; }
+        body footer section.sponsors-and-social .social-buttons .twitter-button:hover {
+          background-image: url("../images/twitter1.png"); }
+      body footer section.sponsors-and-social .links {
+        font-size: 15px;
+        font-weight: 600;
+        margin-top: 35px; }
+        body footer section.sponsors-and-social .links a {
+          color: white; }
+        body footer section.sponsors-and-social .links a:hover {
+          color: #ea8c0c; }
+      body footer section.sponsors-and-social .copyright {
+        margin-top: 30px;
+        color: #999898;
+        font-weight: 300;
+        font-size: 14px; }
+
+/*# sourceMappingURL=styles.css.map */
