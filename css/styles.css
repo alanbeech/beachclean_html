@@ -1,13 +1,3 @@
-@media screen and (max-width: 770px) {
-  nav.main {
-    display: none; }
-
-  /* hide it elsewhere */ }
-@media screen and (min-width: 770px) {
-  nav.mobile {
-    display: none; }
-
-  /* hide it elsewhere */ }
 body {
   background-color: #bbb;
   margin: 0;
@@ -138,24 +128,29 @@ body {
         margin-top: 5px;
         height: 94px;
         width: 131px; }
-    body .body-container main.home .header {
-      height: 621px;
-      background-image: url("../images/home-header.jpg");
-      background-position: center; }
-      body .body-container main.home .header .text-area {
-        width: 80%;
+    body .body-container main.home .one {
+      background-image: url("../images/home-header-1.jpg"); }
+    body .body-container main.home .two {
+      background-image: url("../images/home-header-2.jpg"); }
+    body .body-container main.home .three {
+      background-image: url("../images/home-header-3.jpg"); }
+    body .body-container main.home .header-1 {
+      display: none;
+      height: 620px;
+      background-position: center;
+      background-image: url("../images/home-header-1.jpg"); }
+      body .body-container main.home .header-1 .text-area {
+        width: 511px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 40%;
         text-align: center; }
-        body .body-container main.home .header .text-area img {
+        body .body-container main.home .header-1 .text-area img {
           margin-top: 86px;
-          width: 427px;
-          height: 165px; }
-        body .body-container main.home .header .text-area p {
+          width: 511px; }
+        body .body-container main.home .header-1 .text-area p {
           font-size: 22px;
           margin-top: 30px; }
-        body .body-container main.home .header .text-area button {
+        body .body-container main.home .header-1 .text-area button {
           font-family: inherit;
           font-size: 16px;
           background-color: #6e9eaf;
@@ -165,7 +160,62 @@ body {
           color: #fff;
           font-weight: 400;
           margin-top: 40px; }
-        body .body-container main.home .header .text-area button:hover {
+        body .body-container main.home .header-1 .text-area button:hover {
+          background-color: #0c3442; }
+    body .body-container main.home .header-2 {
+      display: none;
+      height: 620px;
+      background-position: center;
+      background-image: url("../images/home-header-2.jpg"); }
+      body .body-container main.home .header-2 .text-area {
+        width: 542px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.home .header-2 .text-area img {
+          margin-top: 86px;
+          width: 542px; }
+        body .body-container main.home .header-2 .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+        body .body-container main.home .header-2 .text-area button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 184px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.home .header-2 .text-area button:hover {
+          background-color: #0c3442; }
+    body .body-container main.home .header-3 {
+      height: 620px;
+      background-position: center;
+      background-image: url("../images/home-header-3.jpg"); }
+      body .body-container main.home .header-3 .text-area {
+        width: 581px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.home .header-3 .text-area img {
+          margin-top: 86px;
+          width: 581px; }
+        body .body-container main.home .header-3 .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+        body .body-container main.home .header-3 .text-area button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 184px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.home .header-3 .text-area button:hover {
           background-color: #0c3442; }
     body .body-container main.home .welcome {
       text-align: center;
@@ -209,15 +259,17 @@ body {
           margin-top: 24px;
           font-weight: 300;
           font-size: 16px; }
-        body .body-container main.home section.world-map div.info button {
-          background-color: #0c3442;
-          color: white;
-          font-size: 16px;
-          border-width: 0;
-          font-family: inherit;
-          height: 68px;
-          width: 220px;
-          margin-top: 52px; }
+        body .body-container main.home section.world-map div.info a {
+          color: #fff; }
+          body .body-container main.home section.world-map div.info a button {
+            background-color: #0c3442;
+            color: #fff !important;
+            font-size: 16px;
+            border-width: 0;
+            font-family: inherit;
+            height: 68px;
+            width: 220px;
+            margin-top: 52px; }
     body .body-container main.home section.boards {
       height: 437px;
       background-color: #0c3442;
@@ -225,19 +277,20 @@ body {
       text-align: center;
       background-image: url("../images/uk-map.png");
       background-position: center; }
-      body .body-container main.home section.boards .text-area {
-        float: right;
-        width: 50%;
-        padding: 20px; }
-        body .body-container main.home section.boards .text-area .where-heading {
+      body .body-container main.home section.boards .text-area-home-boards {
+        width: 500px;
+        padding: 20px;
+        border: 0px solid red;
+        margin-left: auto; }
+        body .body-container main.home section.boards .text-area-home-boards .where-heading {
           font-size: 30px;
           font-weight: 300;
           margin-top: 60px; }
-        body .body-container main.home section.boards .text-area p {
+        body .body-container main.home section.boards .text-area-home-boards p {
           font-size: 16px;
           font-weight: 300;
           margin-top: 25px; }
-        body .body-container main.home section.boards .text-area button {
+        body .body-container main.home section.boards .text-area-home-boards button {
           height: 70px;
           width: 304px;
           background-color: #0c3442;
@@ -246,15 +299,55 @@ body {
           font-weight: 600;
           font-family: inherit;
           font-size: 16px; }
-        body .body-container main.home section.boards .text-area button:hover {
+        body .body-container main.home section.boards .text-area-home-boards button:hover {
           background-color: #6e9eaf; }
     body .body-container main.home section.video {
-      height: 909px;
-      background-image: url("../images/home-video-cover.jpg");
       background-position: center;
-      text-align: center; }
+      text-align: center;
+      position: relative; }
+      body .body-container main.home section.video video {
+        z-index: 0; }
+      body .body-container main.home section.video .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        color: #fff;
+        border: solid red 0px;
+        width: 100%; }
+        body .body-container main.home section.video .overlay h1 {
+          margin: 0; }
+          body .body-container main.home section.video .overlay h1 img {
+            width: 524px;
+            margin-top: 15%; }
+        body .body-container main.home section.video .overlay h2 {
+          font-weight: 400;
+          font-size: 24px;
+          margin-top: 36px; }
+        body .body-container main.home section.video .overlay p {
+          font-weight: 300;
+          font-size: 24px; }
+        body .body-container main.home section.video .overlay img {
+          width: 177px;
+          margin-top: 46px; }
+        body .body-container main.home section.video .overlay a.play {
+          cursor: pointer;
+          border: 0px solid red;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 34px;
+          display: block;
+          height: 64px;
+          width: 64px;
+          background-image: url("../images/home-play-button0.png");
+          background-size: 64px 64px; }
+        body .body-container main.home section.video .overlay a.play:hover {
+          background-image: url("../images/home-play-button1.png"); }
       body .body-container main.home section.video .text-area {
-        color: #fff; }
+        color: #fff;
+        border: solid red 1px;
+        margin-left: auto;
+        margin-right: auto; }
         body .body-container main.home section.video .text-area h1 {
           margin: 0; }
           body .body-container main.home section.video .text-area h1 img {
@@ -279,12 +372,11 @@ body {
           height: 64px;
           width: 64px;
           background-image: url("../images/home-play-button0.png");
-          width: 64px;
-          height: 64px;
           background-size: 64px 64px; }
         body .body-container main.home section.video .text-area a.play:hover {
           background-image: url("../images/home-play-button1.png"); }
     body .body-container main.home section.shop {
+      display: none;
       height: 570px;
       background-color: #f4f1ed;
       background-image: url("../images/shop-section-back.png");
@@ -361,6 +453,17 @@ body {
       height: 620px;
       background-image: url("../images/about-header.jpg");
       background-position: center; }
+      body .body-container main.about section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.about section.header .text-area img {
+          margin-top: 86px;
+          width: 661px; }
+        body .body-container main.about section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
     body .body-container main.about section.intro {
       height: 512px;
       background-image: url("../images/about-intro-background.png");
@@ -487,11 +590,87 @@ body {
             margin-top: 20px;
             margin-bottom: 20px;
             font-size: 15px; }
+    body .body-container main.beachcleanday section.header {
+      height: 620px;
+      background-image: url("../images/beachcleanday-header.png");
+      background-position: center; }
+      body .body-container main.beachcleanday section.header .text-area-centered {
+        border: 0px solid red;
+        width: 716px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.beachcleanday section.header .text-area-centered img {
+          margin-top: 86px;
+          width: 716px; }
+        body .body-container main.beachcleanday section.header .text-area-centered p {
+          font-size: 22px;
+          margin-top: 30px; }
+    body .body-container main.beachcleanday section.header2 {
+      height: 1232px;
+      background-image: url("../images/beachcleanday-header2.png");
+      background-position: center; }
+    body .body-container main.beachcleanday section.intro {
+      height: 320px;
+      text-align: center;
+      background-color: #f5f2ed;
+      padding-bottom: 160px;
+      padding-top: 92px; }
+      body .body-container main.beachcleanday section.intro .text-container {
+        max-width: 1234px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px; }
+        body .body-container main.beachcleanday section.intro .text-container p {
+          font-size: 16px;
+          font-weight: 200; }
+    body .body-container main.contact section.header {
+      height: 616px;
+      background-image: url("../images/contact-header.jpg");
+      background-position: center; }
+      body .body-container main.contact section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.contact section.header .text-area img {
+          margin-top: 86px;
+          width: 452px; }
+        body .body-container main.contact section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+    body .body-container main.contact section.intro {
+      height: 290px;
+      text-align: center;
+      background-color: #fafafa;
+      padding-bottom: 160px; }
+      body .body-container main.contact section.intro h1 {
+        margin: 0;
+        padding-top: 96px;
+        font-weight: 300;
+        font-size: 30px; }
+      body .body-container main.contact section.intro p {
+        margin-top: 15px; }
+    body .body-container section.details {
+      text-align: center;
+      font-size: 16px;
+      padding-top: 90px;
+      padding-bottom: 90px; }
     body .body-container main.videos section.header {
       height: 616px;
       background-image: url("../images/videos-header.jpg");
-      background-position: center;
-      border-top: 1px solid #ddd; }
+      background-position: center; }
+      body .body-container main.videos section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.videos section.header .text-area img {
+          margin-top: 86px;
+          width: 607px; }
+        body .body-container main.videos section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
     body .body-container main.videos section.featured-video {
       background-color: #fafafa;
       height: 556px; }
@@ -555,10 +734,9 @@ body {
       background-image: url("../images/boards-header.jpg");
       background-position: center; }
       body .body-container main.boards section.header .text-area {
-        width: 80%;
+        width: 600px;
         margin-left: auto;
         margin-right: auto;
-        padding-right: 40%;
         text-align: center; }
         body .body-container main.boards section.header .text-area img {
           margin-top: 86px;
@@ -642,6 +820,230 @@ body {
             font-size: 16px;
             font-weight: 300;
             display: none; }
+    body .body-container main.boards-map section.map #map_canvas {
+      height: 1000px;
+      width: 100%; }
+    body .body-container main.why section.header {
+      height: 620px;
+      background-image: url("../images/why-header.jpg");
+      background-position: center; }
+      body .body-container main.why section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.why section.header .text-area img {
+          margin-top: 86px;
+          width: 405px;
+          margin-right: 15px; }
+        body .body-container main.why section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+    body .body-container main.why section.intro {
+      height: 370px;
+      text-align: center;
+      background-color: #fafafa; }
+      body .body-container main.why section.intro h1 {
+        margin: 0;
+        padding-top: 96px;
+        font-weight: 300;
+        font-size: 30px; }
+      body .body-container main.why section.intro p {
+        margin-top: 15px;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto; }
+      body .body-container main.why section.intro button {
+        font-family: inherit;
+        font-size: 16px;
+        background-color: #6e9eaf;
+        border-width: 0;
+        height: 66px;
+        width: 292px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 40px; }
+      body .body-container main.why section.intro button:hover {
+        background-color: #0c3442; }
+    body .body-container main.why section.body {
+      background-color: white;
+      padding-bottom: 90px; }
+      body .body-container main.why section.body .content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1240px; }
+        body .body-container main.why section.body .content h1 {
+          margin: 0;
+          margin-top: 95px; }
+        body .body-container main.why section.body .content ul li {
+          margin-bottom: 15px;
+          margin-top: 15px; }
+        body .body-container main.why section.body .content iframe {
+          margin-left: 20px;
+          margin-top: 80px; }
+    body .body-container main.safety section.header {
+      height: 620px;
+      background-image: url("../images/safety-header.jpg");
+      background-position: center; }
+      body .body-container main.safety section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.safety section.header .text-area img {
+          margin-top: 86px;
+          width: 530px; }
+        body .body-container main.safety section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+        body .body-container main.safety section.header .text-area button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 184px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.safety section.header .text-area button:hover {
+          background-color: #0c3442; }
+    body .body-container main.safety section.intro {
+      height: 370px;
+      text-align: center;
+      background-color: #fafafa; }
+      body .body-container main.safety section.intro h1 {
+        margin: 0;
+        padding-top: 96px;
+        font-weight: 300;
+        font-size: 30px; }
+      body .body-container main.safety section.intro p {
+        margin-top: 15px;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto; }
+      body .body-container main.safety section.intro button {
+        font-family: inherit;
+        font-size: 16px;
+        background-color: #6e9eaf;
+        border-width: 0;
+        height: 66px;
+        width: 292px;
+        color: #fff;
+        font-weight: 400;
+        margin-top: 40px; }
+      body .body-container main.safety section.intro button:hover {
+        background-color: #0c3442; }
+    body .body-container main.safety section.body {
+      background-color: white;
+      padding-bottom: 90px; }
+      body .body-container main.safety section.body .content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1240px; }
+        body .body-container main.safety section.body .content h1 {
+          margin: 0;
+          margin-top: 95px; }
+        body .body-container main.safety section.body .content ul li {
+          margin-bottom: 15px;
+          margin-top: 15px; }
+    body .body-container main.global section.header {
+      height: 620px;
+      background-image: url("../images/global-header.jpg");
+      background-position: center; }
+      body .body-container main.global section.header .text-area {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        body .body-container main.global section.header .text-area img {
+          margin-top: 86px;
+          width: 625px; }
+        body .body-container main.global section.header .text-area p {
+          font-size: 22px;
+          margin-top: 30px; }
+    body .body-container main.global section.intro {
+      height: 430px;
+      text-align: center;
+      background-color: #fafafa;
+      padding-bottom: 160px; }
+      body .body-container main.global section.intro h1 {
+        margin: 0;
+        padding-top: 96px;
+        font-weight: 300;
+        font-size: 30px; }
+      body .body-container main.global section.intro h2 {
+        margin: 0;
+        margin-top: 96px;
+        font-weight: 300;
+        font-size: 24px; }
+      body .body-container main.global section.intro p {
+        margin-top: 15px; }
+    body .body-container main.global section.filter {
+      text-align: center;
+      padding-bottom: 100px; }
+      body .body-container main.global section.filter .filter-box {
+        max-width: 1100px;
+        background-color: #f5f2ed;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        padding-top: 46px;
+        padding-bottom: 46px; }
+        body .body-container main.global section.filter .filter-box h1 {
+          margin: 0;
+          font-size: 20px; }
+        body .body-container main.global section.filter .filter-box .dropdown {
+          margin-top: 26px;
+          border: 0px solid red;
+          width: 400px;
+          margin-left: auto;
+          margin-right: auto; }
+          body .body-container main.global section.filter .filter-box .dropdown button {
+            width: 400px; }
+          body .body-container main.global section.filter .filter-box .dropdown ul {
+            width: 400px; }
+            body .body-container main.global section.filter .filter-box .dropdown ul li {
+              font-size: 20px;
+              text-align: center; }
+      body .body-container main.global section.filter .country-info {
+        display: none; }
+        body .body-container main.global section.filter .country-info h1 {
+          margin: 0;
+          font-size: 30px;
+          margin-top: 62px;
+          margin-bottom: 28px; }
+        body .body-container main.global section.filter .country-info p {
+          font-size: 16px;
+          margin-bottom: 20px; }
+        body .body-container main.global section.filter .country-info button {
+          font-family: inherit;
+          font-size: 16px;
+          background-color: #6e9eaf;
+          border-width: 0;
+          height: 66px;
+          width: 248px;
+          color: #fff;
+          font-weight: 400;
+          margin-top: 40px; }
+        body .body-container main.global section.filter .country-info button:hover {
+          background-color: #0c3442; }
+        body .body-container main.global section.filter .country-info h2 {
+          margin: 0;
+          margin-top: 56px;
+          font-size: 20px;
+          font-weight: 300;
+          margin-bottom: 30px; }
+    body .body-container main.global section.your-country {
+      height: 90px;
+      background-color: #f5f2ed;
+      text-align: center; }
+      body .body-container main.global section.your-country p {
+        padding-top: 32px;
+        color: #0c3442;
+        font-size: 18px;
+        font-weight: 200;
+        text-transform: uppercase; }
   body footer {
     background-color: white;
     max-width: 1600px;
@@ -758,5 +1160,36 @@ body {
         color: #999898;
         font-weight: 300;
         font-size: 14px; }
+
+@media screen and (max-width: 770px) {
+  nav.main {
+    display: none; }
+
+  /* narrow */
+  .text-area {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    border: solid 0px red; }
+
+  .text-area-home-boards {
+    margin-right: auto !important;
+    margin-left: auto !important; }
+
+  .hands {
+    display: none; } }
+@media screen and (min-width: 770px) {
+  nav.mobile {
+    display: none; }
+
+  /* wide */
+  .text-area {
+    margin-right: 45% !important;
+    border: solid 0px green; }
+
+  .text-area-home-boards {
+    margin-left: 55% !important; }
+
+  .hands {
+    display: block; } }
 
 /*# sourceMappingURL=styles.css.map */

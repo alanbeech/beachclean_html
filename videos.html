@@ -10,8 +10,6 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 
-    <script src="libs/simple-player/simplePlayer.js"></script>
-
 </head>
 <body>
 
@@ -50,13 +48,47 @@
                             <li class="selected-arrow">&#9650;</li>
                             <li class="vert-header">Boards</li>
                             <li><a href="boardsmap.html">Map</a></li>
-                            <li><a href="boardsinfo.html">Info</a></li>
+                            <li><a href="boards.html">Info</a></li>
                         </ul>
                     </li>
-                    <li><a class="horiz" href="blog.html">Blog</a></li>
+                    <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
                     <li><a class="horiz" href="global.html">Global</a></li>
-                    <li><a class="horiz selected" href="shop.html">Shop</a></li>
+                    <!--<li><a class="horiz selected" href="shop.html">Shop</a></li>-->
                 </ul>
+            </nav>
+
+            <nav class="mobile">
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="why.html">Why?</a></li>
+                        <li><a href="safety.html">Safety</a></li>
+                        </li>
+                        <li><a href="about.html">About</a>
+                            <ul >
+                                <!--<li><a href="sponsors.html">Sponsors</a></li>-->
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                                <!--<li><a href="media.html">Media</a></li>-->
+                            </ul>
+                        </li>
+                        <li>
+                            <a  href="boards.html">Boards</a>
+                            <ul>
+                                <li><a href="boardsmap.html">Map</a></li>
+                                <li><a href="boards.html">Info</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
+                        <li><a href="global.html">Global</a></li>
+                    </ul>
+                </div>
+
             </nav>
 
         </div>
@@ -68,7 +100,10 @@
         <main class="videos">
 
             <section class="header">
-
+                <div class="text-area">
+                    <img src="images/videos-header-text.png" alt="Beach cleans on the small screen">
+                    <p>Videos are a powerful way of getting our message across. Click on the videos to play.</p>
+                </div>
             </section>
 
             <section class="featured-video">
@@ -167,16 +202,16 @@
                     <div style="clear: both"></div>
 
 
-                    <hr/>
+                    <!--<hr/>-->
 
-                    <div class="pager">
-                        <a href="#" class="selected">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                    </div>
+                    <!--<div class="pager">-->
+                        <!--<a href="#" class="selected">1</a>-->
+                        <!--<a href="#">2</a>-->
+                        <!--<a href="#">3</a>-->
+                        <!--<a href="#">4</a>-->
+                        <!--<a href="#">5</a>-->
+                        <!--<a href="#">6</a>-->
+                    <!--</div>-->
 
                 </div>
 
@@ -221,18 +256,35 @@
                         data.forEach(function (video) {
 
                             var videoHtml = '<div class="video">' +
-                                    '<iframe width="289" height="179" src="https://www.youtube-nocookie.com/embed/' + video.embedHtml +'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' +
-                                    '<div class="date">April 14, 2016</div>' +
-                                    '<div class="title">Love your beach? Got 2 minutes? Love your beach? Got 2 minutes?</div>' +
+                                    '<iframe width="289" height="179" src="http://www.youtube-nocookie.com/embed/' + video.embedHtml +'?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>' +
+                                    '<div class="date">' + getDate(video.timestamp) + '</div>' +
+                                    '<div class="title">' + video.shortDescription + '</div>' +
                                     '</div>';
 
                             $('section.videos .content').append(videoHtml);
-                            //alert(JSON.stringify(video));
+
                         });
 
                     }
                 });
 
+            }
+
+            function getDate(dateIn){
+                var monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ];
+
+                var date = new Date(dateIn);
+                var day = date.getDate();
+                var monthIndex = date.getMonth();
+                var year = date.getFullYear();
+
+                //console.log(day, monthNames[monthIndex], year);
+                return day + ' ' + monthNames[monthIndex] + ' ' + year;
             }
 
 
@@ -281,14 +333,14 @@
             <div class="follow-us">Follow us</div>
 
             <div class="social-buttons">
-                <a class="instagram-button" href="#" ></a>
-                <a class="facebook-button" href="#" ></a>
-                <a class="twitter-button" href="#" ></a>
+                <a class="instagram-button" href="https://www.instagram.com/2minutebeachclean/" target="_blank" ></a>
+                <a class="facebook-button" href="https://www.facebook.com/2minutebeachclean" target="_blank" ></a>
+                <a class="twitter-button" href="https://twitter.com/2minbeachclean" target="_blank" ></a>
             </div>
 
             <div class="links">
                 <a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="boards.html">Boards</a> | <a href="blog.html">Blog</a> | <a
-                    href="global.html">Global</a> | <a href="contact.html">Contact</a> | <a href="shop.html">Shop</a>
+                    href="global.html">Global</a> | <a href="contact.html">Contact</a>
             </div>
 
             <div class="copyright">&copy; 2 Minute Beach Clean 2016</div>

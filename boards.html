@@ -9,7 +9,8 @@
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
 
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBDUbFNWPFMqg3PkRP7icfWt1jDZmZCbic"></script>-->
 </head>
 <body>
 
@@ -35,10 +36,10 @@
                             <li class="spacer">&nbsp;</li>
                             <li class="selected-arrow">&#9650;</li>
                             <li class="vert-header">About</li>
-                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <!--<li><a href="sponsors.html">Sponsors</a></li>-->
                             <li><a href="about.html">About us</a></li>
                             <li><a href="videos.html">Videos</a></li>
-                            <li><a href="media.html">Media</a></li>
+                            <!--<li><a href="media.html">Media</a></li>-->
                         </ul>
                     </li>
                     <li>
@@ -48,16 +49,46 @@
                             <li class="selected-arrow">&#9650;</li>
                             <li class="vert-header">Boards</li>
                             <li><a href="boardsmap.html">Map</a></li>
-                            <li><a href="boardsinfo.html">Info</a></li>
+                            <li><a href="boards.html">Info</a></li>
                         </ul>
                     </li>
-                    <li><a class="horiz" href="blog.html">Blog</a></li>
+                    <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
                     <li><a class="horiz" href="global.html">Global</a></li>
-                    <li><a class="horiz" href="shop.html">Shop</a></li>
+                    <!--<li><a class="horiz" href="shop.html">Shop</a></li>-->
                 </ul>
             </nav>
             <nav class="mobile">
-                <button class="btn btn-default">MENU</button>
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="why.html">Why?</a></li>
+                        <li><a href="safety.html">Safety</a></li>
+                        </li>
+                        <li><a href="about.html">About</a>
+                            <ul >
+                                <li><a href="sponsors.html">Sponsors</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                                <li><a href="media.html">Media</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a  href="boards.html">Boards</a>
+                            <ul>
+                                <li><a href="boardsmap.html">Map</a></li>
+                                <li><a href="boards.html">Info</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
+                        <li><a href="global.html">Global</a></li>
+                    </ul>
+                </div>
+
             </nav>
 
         </div>
@@ -72,8 +103,8 @@
 
                 <div class="text-area">
                     <img src="images/home-title.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. vamus semper eros libero, eu vulputate metus blandit.</p>
-                    <a href="#">
+                    <p>We work with various organisations around the world to spread the #2minutebeachclean message.</p>
+                    <a href="#intro">
                         <button>Find out more</button>
                     </a>
 
@@ -81,7 +112,7 @@
 
             </section>
 
-            <section class="intro">
+            <section name="intro" class="intro">
 
                 <h1>The Beach Clean Stations</h1>
 
@@ -91,9 +122,8 @@
 
                 <p>They are all made to order by our supplier in Barnstaple.</p>
 
-                <!--<a href="#">-->
-                    <button id="show-boards-button">Show me the board locations</button>
-                <!--</a>-->
+                <button id="show-boards-button">Show me the board locations</button>
+
 
             </section>
 
@@ -108,30 +138,72 @@
                     <div class="item">
                         <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
                         <h1>Can I have a beach clean station at my beach?</h1>
+                        <p>We have some signs to distribute from time to time. However the beach must meet the criteria as outlined below. But, in short, the beach must have bins, there must be a guardian to put it out and take it in each day (weather permitting) and there must be full permission granted by the land owners. The signs must be insured (more later).</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Where are the beach clean stations?</h1>
+                        <p>We placed our first beach clean station at Crooklets beach in Bude in September 2014. It was funded by Surfdome and Beach Care. Since then we have placed stations at Porthtowan, Chapel Porth, Croyde (2), Westward Ho!, Gyllingvase, Widemouth Bay, Black Rock (Bude), Summerleaze (Bude), Branscombe, Exmouth and Porth Meor (St Ives). We also have plans for lots more.</p>
+                        <p>There are currently 20 signs at Blue Flag beaches in Ireland and an additional 8 in Dorset.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>How successfull are the signs?</h1>
+                        <p>In the year between October 2014 and the end of September 2015 the amount of litter collected on monthly clean ups at our first pilot location at Crooklets beach in Bude was reduced by 61% compared with the same period in the year previously.</p>
+                        <p>In general people love the signs and we get a lot of attention on social media from them.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Who makes the signs?</h1>
+                        <p>The signs are made by a company in Barnstaple for us to their bespoke design. The design took a lot of work to finesse, which is why we don’t licence the building of the signs to anyone else. They put in a lot of time to get it right. Each sign has a chain to stop it from opening and collapsing, a latch to keep it in the right position and can be sandbagged on windy days. We do not franchise out the building of the signs.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>How much do the signs cost?</h1>
+                        <p>Each single station costs £330 + VAT to sponsor, of which we take around 10% for admin, insurance and phone bills and running about (don’t forget we are largely unfunded as an organisation). Litter pickers are extra (but are £8 each). The cost can come down for larger orders. Delivery is extra, although we usually try to arrange this at a mutually beneficial time and cost.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can I sponsor a sign?</h1>
+                        <p>Yes you can. If you can find a suitable location, guardian and are willing to take a certain amount of responsibility or can negotiate with a landowner to be responsible. Permission from the landowner or local council must be sought and approved.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Can my sign be tailored to my needs?</h1>
+                        <p>Yes it can, depending on how complicated it is. Usually we can add logos at no extra cost but extra design work – changing the text or imagery for example - costs extra.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>What about insurance?</h1>
+                        <p>Each sign is either sponsored or bought. If you have your own insurance – we encourage this – then you can buy the board outright, otherwise our insurance covers it for public liability. However, we require each sponsor to sign a contract with us to say they have read our guidelines.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>How do I qualify for a sign?</h1>
+                        <p>We issue each board with guidelines – which must be read, understood and signed – as to the best placement of the sign and how to use it safely. It cannot, for example, be put out in strong winds. If it was and damage was caused either to the sign or to a vehicle or person we would not be held responsible.</p>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
+                        <h1>Is my beach suitable for a sign?</h1>
                         <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
                         <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
                     </div>
 
                     <div class="item">
                         <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
-                        <h1>Can I have a beach clean station at my beach?</h1>
-                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
-                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
+                        <h1>Where can I send a cheque?</h1>
+                        <p>We get a lot of requests for information, so hopefully this will be enough. If you want to go ahead and sponsor a sign, please get in touch to talk about payment, insurance, location and your appointed guardian.</p>
                     </div>
 
-                    <div class="item">
-                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
-                        <h1>Can I have a beach clean station at my beach?</h1>
-                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
-                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
-                    </div>
-
-                    <div class="item">
-                        <img src="images/boards-minus-button.png" data-alt-img="images/boards-plus-button.png" alt="show/hide detail">
-                        <h1>Can I have a beach clean station at my beach?</h1>
-                        <p>Not all beaches are suitable for beach clean stations. We require a guardian – a local café, bar or restaurant – to put out the sign each morning and bring it in at night. They should also be willing to restock bags and keep an eye on the litter pickers and replace any that go missing (they do from time to time). These are the heroes of our campaign and we very much appreciate their support.</p>
-                        <p>We also insist that beach clean stations are placed where bins or recycling facilities are available. We would never want to be accused of littering so this is important. If there are no bins then we regret we cannot place signs.</p>
-                    </div>
                 </div>
 
             </section>
@@ -159,7 +231,13 @@
             // map
             function initialiseMap() {
 
-                var mapOptions = { mapTypeId: google.maps.MapTypeId.ROADMAP };
+
+                //key=AIzaSyBDUbFNWPFMqg3PkRP7icfWt1jDZmZCbic
+
+                var mapOptions = { draggable: false,
+                    scrollwheel: false,
+                    panControl: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP };
                 map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
                 jQuery.support.cors = true;
@@ -307,14 +385,14 @@
             <div class="follow-us">Follow us</div>
 
             <div class="social-buttons">
-                <a class="instagram-button" href="#" ></a>
-                <a class="facebook-button" href="#" ></a>
-                <a class="twitter-button" href="#" ></a>
+                <a class="instagram-button" href="https://www.instagram.com/2minutebeachclean/" target="_blank" ></a>
+                <a class="facebook-button" href="https://www.facebook.com/2minutebeachclean" target="_blank" ></a>
+                <a class="twitter-button" href="https://twitter.com/2minbeachclean" target="_blank" ></a>
             </div>
 
             <div class="links">
                 <a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="boards.html">Boards</a> | <a href="blog.html">Blog</a> | <a
-                    href="global.html">Global</a> | <a href="contact.html">Contact</a> | <a href="shop.html">Shop</a>
+                    href="global.html">Global</a> | <a href="contact.html">Contact</a>
             </div>
 
             <div class="copyright">&copy; 2 Minute Beach Clean 2016</div>

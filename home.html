@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
     <title>#2minutebeachclean | Home</title>
     <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/styles.css">
     <script src="libs/jquery/dist/jquery.min.js"></script>
     <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
-
 </head>
 <body>
 
@@ -34,10 +34,10 @@
                             <li class="spacer">&nbsp;</li>
                             <li class="selected-arrow">&#9650;</li>
                             <li class="vert-header">About</li>
-                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <!--<li><a href="sponsors.html">Sponsors</a></li>-->
                             <li><a href="about.html">About us</a></li>
                             <li><a href="videos.html">Videos</a></li>
-                            <li><a href="media.html">Media</a></li>
+                            <!--<li><a href="media.html">Media</a></li>-->
                         </ul>
                     </li>
                     <li>
@@ -47,16 +47,46 @@
                             <li class="selected-arrow">&#9650;</li>
                             <li class="vert-header">Boards</li>
                             <li><a href="boardsmap.html">Map</a></li>
-                            <li><a href="boardsinfo.html">Info</a></li>
+                            <li><a href="boards.html">Info</a></li>
                         </ul>
                     </li>
-                    <li><a class="horiz" href="blog.html">Blog</a></li>
+                    <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
                     <li><a class="horiz" href="global.html">Global</a></li>
-                    <li><a class="horiz" href="shop.html">Shop</a></li>
+                    <!--<li><a class="horiz" href="shop.html">Shop</a></li>-->
                 </ul>
             </nav>
             <nav class="mobile">
-                <button class="btn btn-default">MENU</button>
+
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <i class="glyphicon glyphicon-menu-hamburger"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="home.html">Home</a></li>
+                        <li>
+                            <a href="why.html">Why?</a></li>
+                            <li><a href="safety.html">Safety</a></li>
+                        </li>
+                        <li><a href="about.html">About</a>
+                            <ul >
+                                <!--<li><a href="sponsors.html">Sponsors</a></li>-->
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="videos.html">Videos</a></li>
+                                <!--<li><a href="media.html">Media</a></li>-->
+                            </ul>
+                        </li>
+                        <li>
+                            <a  href="boards.html">Boards</a>
+                            <ul>
+                                <li><a href="boardsmap.html">Map</a></li>
+                                <li><a href="boards.html">Info</a></li>
+                            </ul>
+                        </li>
+                        <!--<li><a class="horiz" href="blog.html">Blog</a></li>-->
+                        <li><a href="global.html">Global</a></li>
+                    </ul>
+                </div>
+
             </nav>
 
         </div>
@@ -68,19 +98,36 @@
         <main class="home">
 
             <section class="info-bar">
-                <img class="pull-left" alt="hands in the air" src="images/hands-in-the-air.png">
-                <img class="pull-right" alt="hands in the air" src="images/hands-in-the-air.png">
-                <div class="message">June 11th is our first National #2minutebeachclean Day. <a href="#">Find out more</a></div>
+                <img class="pull-left hands" alt="hands in the air" src="images/hands-in-the-air.png">
+                <img class="pull-right hands" alt="hands in the air" src="images/hands-in-the-air.png">
+                <div class="message">June 11th is our first National #2minutebeachclean Day. <a href="beachcleanday.html">Find out more</a></div>
             </section>
 
-            <section class="header">
-
+            <section class="header-1">
                 <div class="text-area">
-                    <img src="images/home-title.png" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. vamus semper eros libero, eu vulputate metus blandit.</p>
-                    <button>Find out more</button>
-                </div>
+                    <img src="images/home-header-text-1.png" alt="">
+                    <p>In UK trials our beach clean boards reduced beach litter by 61%. Your beach could get one too!</p>
+                    <a href="boards.html">
+                        <button>Read more</button>
+                    </a>
 
+                </div>
+            </section>
+
+            <section class="header-2">
+                <div class="text-area">
+                    <img src="images/home-header-text-2.png" alt="">
+                    <p>Everyone has 2 minutes. You’ll be surprised what a difference it can make.</p>
+                    <a href="map.html"><button>See the results</button></a>
+                </div>
+            </section>
+
+            <section class="header-3">
+                <div class="text-area">
+                    <img src="images/home-header-text-3.png" alt="">
+                    <p>Stay safe on your #2minutebeachclean with our guide to beach clean safety.</p>
+                    <a href="safety.html"><button>Read more</button></a>
+                </div>
             </section>
 
 
@@ -89,7 +136,9 @@
                 <p>We are a growing family of beach lovers rolling up our sleeves to help rid the world’s beaches of marine litter and plastic pollution, two minutes at a time.</p>
                 <p>We believe that every piece of litter removed from the beach matters. So it doesn’t matter if you do 2 minutes or 30. Each and every piece of marine<br>plastic removed from the beach is a piece that will no longer go on to kill.</p>
                 <p>Our movement has grown enormously since its inception in 2014. Since then thousands of people all over the globe have used our hashtag for their<br>beach cleaning activities.</p>
-                <button>See the latest posts</button>
+                <a href="https://www.instagram.com/2minutebeachclean/" target="_blank">
+                    <button>See the latest posts</button>
+                </a>
             </section>
 
             <section class="world-map">
@@ -101,24 +150,48 @@
                         Since January 2016 we’ve been logging each and every geotagged post <br>
                         on our World #2minutebeachclean Map.
                     </p>
-                    <button>See how it all adds up</button>
+                    <a href="map.html">
+                        <button>See how it all adds up</button>
+                    </a>
+
                 </div>
             </section>
 
             <section class="boards">
 
-                <div class="map-area"></div>
 
-                <div class="text-area">
+                <div class="text-area-home-boards">
                     <div class="where-heading">Where's your nearest<br>#2minutebeachclean station?</div>
                     <p>Our litter picking stations are all over the UK and Ireland.<br>
                         See our map to find out where they are and who looks after them.</p>
-                    <button>Locate your local beach clean</button>
+                    <a href="boards.html">
+                        <button style="color: #fff;">Locate your local beach clean</button>
+                    </a>
+
                 </div>
             </section>
 
             <section class="video">
-                <div class="text-area">
+
+                <!--http://tmbcstorage.blob.core.windows.net/videos/got2minutes.mp4-->
+
+                <video id="video-player" poster="images/home-video-cover.jpg" controls="controls" preload="none">
+                    <!-- MP4 for Safari, IE9, iPhone, iPad, Android, and Windows Phone 7 -->
+                    <source type="video/mp4" src="http://tmbcstorage.blob.core.windows.net/videos/got2minutes.mp4" />
+
+                    <!-- Optional: Add subtitles for each language -->
+                    <!--<track kind="subtitles" src="subtitles.srt" srclang="en" />-->
+                    <!-- Optional: Add chapters -->
+
+                    <!-- Flash fallback for non-HTML5 browsers without JavaScript -->
+                    <!--<object width="320" height="240" type="application/x-shockwave-flash" data="flashmediaelement.swf">-->
+                        <!--<param name="movie" value="flashmediaelement.swf" />-->
+                        <!--<param name="flashvars" value="controls=true&file=myvideo.mp4" />-->
+                        <!--&lt;!&ndash; Image as a last resort &ndash;&gt;-->
+                        <!--<img src="myvideo.jpg" width="320" height="240" title="No video playback capabilities" />-->
+                    <!--</object>-->
+                </video>
+                <div class="overlay">
                     <h1><img src="images/home-got-two-minutes.png" alt="got 2 minutes?"></h1>
                     <h2>Of course you have.</h2>
                     <p>
@@ -127,10 +200,9 @@
                     </p>
                     <img src="images/home-dotted-line.png" alt="dotted line">
 
-                    <a class="play" href="#">
-
-                    </a>
+                    <a class="play" id="play"></a>
                 </div>
+
             </section>
 
             <section class="shop">
@@ -176,11 +248,104 @@
 
         var HomeVM = ( function( window ) {
 
+            var video;
+            var isPlaying = false;
+
             function activate() {
 
-                $( ".video .play" ).click(function() {
-                    alert( "play" );
+                video = document.getElementById("video-player");
+
+                $('#play').click(function() {
+                    $('.overlay').fadeOut();
+                    video.play();
                 });
+
+                $('#video-player').click(function(){
+                    if (isPlaying)
+                    {
+                        video.pause();
+                        isPlaying = false;
+                    }
+                    else {
+                        video.play();
+                        isPlaying = true;
+                    }
+                });
+
+                $( window ).resize(function() {
+                    var width = $(window).width();
+                    if (width>1600) width = 1600;
+                    $('video').width(width);
+                });
+
+                scheduleNextHeader();
+
+                var index = 3;
+                console.log(index);
+                function scheduleNextHeader(){
+                    if (index==1)
+                    {
+                        $(".header-1").show();
+                        $(".header-2").hide();
+                        $(".header-3").hide();
+                    }
+                    if (index==2)
+                    {
+                        $(".header-1").hide();
+                        $(".header-2").show();
+                        $(".header-3").hide();
+                    }
+                    if (index==3) {
+                        $(".header-1").hide();
+                        $(".header-2").hide();
+                        $(".header-3").show();
+                    }
+                    index--;
+                    if (index==0) index = 3;
+
+                    window.setTimeout(function(){
+                        scheduleNextHeader();
+                    }, 6000);
+
+                }
+            }
+
+            $(function () {
+                activate();
+            });
+
+        } )( window );
+        
+        var FooterVM = ( function( window ) {
+
+            var _this = this;
+            function activate(){
+                $( "#signup" ).submit(function( event ) {
+                  event.preventDefault();
+
+                    if (!validateEmail($('#email').val())) {
+                        alert('invalid email');
+                    }
+                    else {
+                        if ($('#email2').val()=='')
+                        {
+                            $.post('http://beachclean-dev.azurewebsites.net/api/subscribers?name=' + $('#name').val() + '&email=' + $('#email').val(), function () {
+                                $('#thanks-modal').modal('show');
+                            }).fail(function (err) {
+                                $('#thanks-modal').modal('show');
+                                //alert(JSON.stringify(err));
+                                //alert('Sorry. there was a problem subscribing.. please try again later.');
+                            });
+                        }
+                    }
+                });
+            }
+
+
+  
+            function validateEmail(email) {
+                var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
             }
 
             $(function () {
@@ -197,10 +362,11 @@
             <div class="join-the-movement">JOIN THE MOVEMENT, IT'S FREE.</div>
             <div class="why">For early bird offers and news, subscribe and join out tribe.</div>
 
-            <form [ngFormModel]="userForm" (submit)="onClickMe()" class="signup">
-                <input ngControl="name" id="name" type="text" placeholder="Your Name" required>
-                <input ngControl="email" id="email" type="email" placeholder="Your Email">
-                <button type="submit" [disabled]="!userForm.valid">SUBSCRIBE</button>
+            <form id="signup" class="signup">
+                <input id="name" type="text" placeholder="Your Name">
+                <input id="email" type="email" placeholder="Your Email">
+                <input id="email2" style="display:none;">
+                <button  type="submit" >SUBSCRIBE</button>
             </form>
         </section>
 
@@ -219,14 +385,14 @@
             <div class="follow-us">Follow us</div>
 
             <div class="social-buttons">
-                <a class="instagram-button" href="#" ></a>
-                <a class="facebook-button" href="#" ></a>
-                <a class="twitter-button" href="#" ></a>
+                <a class="instagram-button" href="https://www.instagram.com/2minutebeachclean/" target="_blank" ></a>
+                <a class="facebook-button" href="https://www.facebook.com/2minutebeachclean" target="_blank" ></a>
+                <a class="twitter-button" href="https://twitter.com/2minbeachclean" target="_blank" ></a>
             </div>
 
             <div class="links">
                 <a href="home.html">Home</a> | <a href="about.html">About</a> | <a href="boards.html">Boards</a> | <a href="blog.html">Blog</a> | <a
-                    href="global.html">Global</a> | <a href="contact.html">Contact</a> | <a href="shop.html">Shop</a>
+                    href="global.html">Global</a> | <a href="contact.html">Contact</a>
             </div>
 
             <div class="copyright">&copy; 2 Minute Beach Clean 2016</div>
@@ -234,6 +400,41 @@
         </section>
 
     </footer>
+
+    <div id="thanks-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" data-dismiss="modal" aria-hidden="true" class="close">×</button>
+                    <h4 class="modal-title">Thanks for joining #2minutebeachclean</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <tr style="vertical-align: top">
+                            <td>
+                                <img style="width: 150px" src="images/logo.png" alt="#2minutebeachclean logo" class="thanks-logo" />
+                            </td>
+                            <td>&nbsp;&nbsp;</td>
+                            <td>
+                                <p><strong>Thanks!</strong></p>
+                                <p>
+                                    Your details are safe with us. As we consider ourselves to be a family we’d like to make sure everyone who takes part in a #2minutebeachclean knows what’s happening with our campaign. That means we’ll send out newsletters with invites to events, competition news and also the opportunity to try out our app (coming soon) or to get exclusive offers on new products in our shop.
+                                </p>
+                                <p>
+                                    We will never ask for membership fees or subscriptions and you are free to unsubscribe at any time.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal" class="btn btn-warning">Close this popup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 </html>
